@@ -11,7 +11,6 @@ export const Header = () => {
                 <ul className="flex gap-4">
                     <li><Link href="/">Inicio</Link></li>
                     <li><Link href="/materias">Matérias</Link></li>
-                    <li><Link href="/">Contato</Link></li>
                 </ul>
             </nav>
         </header>
