@@ -9,7 +9,7 @@ export default function Card({materia} : Props) {
     const {id, titulo, descricao} = materia
 
     return (
-        <Link href={`/materias/${id}/`}>
+        <Link href={`/artigos/${id}/`}>
             <div className="bg-gray-200 p-8 my-10 flex border rounded-lg">
                 <img src="https://placehold.co/200x200" alt="" />
 

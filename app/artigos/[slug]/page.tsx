@@ -1,17 +1,17 @@
-import { getMateria } from "@/app/lib/api/api";
+import { getMateria, getMaterias } from "@/app/lib/api/api";
 import { notFound } from "next/navigation";
 
 export const dynamic = "force-dynamic";
 
 type Props = {
     params : Promise<{
-        id: number;
+        slug: string;
     }>
 }
 
 export const generateMetadata = async({params} : Props) => {
-    const {id} = await params;
-    const materia = await getMateria(id);
+    const {slug} = await params;
+    const materia = await getMateria(slug);
 
     if (!materia) { return; }
 
@@ -22,8 +22,8 @@ export const generateMetadata = async({params} : Props) => {
 }
 
 const Materia = async ({params} : Props) => {
-    const {id} = await params;
-    const materia = await getMateria(id);
+    const {slug} = await params;
+    const materia = await getMateria(slug);
 
     if (!materia) { return notFound() }
 
@@ -37,6 +37,15 @@ const Materia = async ({params} : Props) => {
             </div>
         </section>
     )
+}
+
+
+export const generateStaticParams = async () => {
+    const materias = await getMaterias();
+    
+    return materias.map((materia) => ({
+        id: materia.id.toString()
+    }));
 }
 
 export default Materia
