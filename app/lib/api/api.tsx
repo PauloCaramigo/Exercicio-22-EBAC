@@ -6,6 +6,6 @@ export async function getMaterias() {
     return materias;
 }
 
-export async function getMateria(id: string) {
-    return materias.find(materia => materia.id === Number(id))
+export async function getMateria(url: string) {    
+    return materias.find(materia => materia.url.includes(url))
 }
