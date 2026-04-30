@@ -32,7 +32,7 @@ const Materia = async ({params} : Props) => {
     return (
         <section className="container flex flex-col my-10 mx-auto p-8 bg-gray-200">
             <div className="flex">
-                <img src="https://placehold.co/200x200" className="w-100 h-100" alt="imagem ilustrativa da matéria" />
+                <img src={materia.imgSrc} className="w-100 h-100" alt="imagem ilustrativa da matéria" />
 
                 <div className="p-4">
                     <h1 className="text-4xl font-bold flex justify-center mb-4">{materia.titulo}</h1>

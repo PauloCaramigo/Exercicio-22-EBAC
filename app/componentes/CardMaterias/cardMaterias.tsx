@@ -6,12 +6,12 @@ type Props = {
 }
 
 export default function Card({materia} : Props) {
-    const {id, url, titulo, descricao} = materia
+    const {id, imgSrc, url, titulo, descricao} = materia
 
     return (
         <Link href={`/artigos/${url}/`}>
-            <div className="bg-gray-200 p-8 my-10 flex border rounded-lg">
-                <img src="https://placehold.co/200x200" alt="" />
+            <div className="bg-gray-200 p-8 my-10 flex border rounded-lg hover:scale-101">
+                <img src={imgSrc} alt="" className="img-card" />
 
                 <div className="ml-4">
                     <h1 className="text-2xl font-bold">{titulo}</h1>

@@ -9,8 +9,8 @@ export const Header = () => {
 
             <nav>
                 <ul className="flex gap-4">
-                    <li><Link href="/">Inicio</Link></li>
-                    <li><Link href="/artigos">Matérias</Link></li>
+                    <li><Link href="/" className="hover:font-bold">Inicio</Link></li>
+                    <li><Link href="/artigos" className="hover:font-bold">Matérias</Link></li>
                 </ul>
             </nav>
         </header>
