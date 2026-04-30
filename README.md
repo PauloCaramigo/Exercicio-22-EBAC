@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Projeto básico onde o intuito é aprender a utilizar o slug para rotas dinamicas no site.
 
-## Getting Started
+Para iniciar o projeto é preciso executar os seguintes comandos
 
-First, run the development server:
+Instalar as dependencias que estão sendo usadas.
+"npm install"
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Rodar o site
+"npm run dev"
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Projeto também foi utilizado para outra atividade com o objetivo de otimizar o site da melhor maneira possível.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O projeto inicialmente não apresentava quaisquer problemas para rodar então foi adicionado algumas imagens para testar seu corpotamento e feito os testes de performance em conexões mais lentas
+Com isso foi identificado que as imagens estarem em .png poderiam estar causando lentidão na hora de carrega-las, com isso foi feito a conversão das imagens para formato .webp
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Também foi identificado que o arquivo de estilos do tailwindcss esta tendo uma certa demora, já o mesmo carregava todos os estilos que o tailwincss tem e não somente o que estava sendo usado, com isso foi alterado a versão do tailwincdd para o tailwindcss/CLI
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Caso queira ver os comparativos de antes e depois da otimização
+Junto a este projeto, está também dois arquivos PDF, tendo o antes e depois com algumas imagens e um pouco mais de detalhes do que foi feito.
