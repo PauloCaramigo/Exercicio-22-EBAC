@@ -2,7 +2,7 @@ export const materias = [
     {
         id: 1,
         url: "jogos-causam-problemas-de-vicios-graves?",
-        imgSrc: "/src/JogosCausamProblemasDeViciosGraves.png",
+        imgSrc: "/src/JogosCausamProblemasDeViciosGraves.webp",
         titulo: "Jogos causam problemas de vicios graves ?",
         descricao: "Muitos jogos, principalmente que envolvem sorte podem gerar graves vicios e causar muitos transtornos na vida pessoal caso não seja tratado ou que a pessoa não tenha controle",
         autor: "Paulo",
@@ -12,7 +12,7 @@ export const materias = [
     {
         id: 2,
         url: "como-funcionam-as-inteligencias-artificiais?",
-        imgSrc: "/src/ComoFuncionaInteligenciasArtificiais.png",
+        imgSrc: "/src/ComoFuncionaInteligenciasArtificiais.webp",
         titulo: "Como funcionam as inteligências artificiais?",
         descricao: "As inteligências artificiais utilizam algoritmos e grandes volumes de dados para aprender padrões e tomar decisões de forma automatizada",
         autor: "Paulo",
@@ -22,7 +22,7 @@ export const materias = [
     {
         id: 3,
         url: "o-que-torna-um-anime-popular?",
-        imgSrc: "/src/OqueTornaUmAnimePopular.png",
+        imgSrc: "/src/OqueTornaUmAnimePopular.webp",
         titulo: "O que torna um anime popular?",
         descricao: "Fatores como história envolvente, personagens marcantes e boa animação contribuem para o sucesso de um anime",
         autor: "Paulo",
@@ -32,7 +32,7 @@ export const materias = [
     {
         id: 4,
         url: "tecnologia-pode-substituir-humanos-no-futuro?",
-        imgSrc: "/src/TecnologiaPodeSubstituirHumanos.png",
+        imgSrc: "/src/TecnologiaPodeSubstituirHumanos.webp",
         titulo: "Tecnologia pode substituir humanos no futuro?",
         descricao: "Com o avanço da automação, algumas profissões podem ser substituídas, mas novas oportunidades também surgem",
         autor: "Paulo",

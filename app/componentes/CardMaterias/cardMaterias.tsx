@@ -6,7 +6,7 @@ type Props = {
 }
 
 export default function Card({materia} : Props) {
-    const {id, imgSrc, url, titulo, descricao} = materia
+    const { imgSrc, url, titulo, descricao } = materia
 
     return (
         <Link href={`/artigos/${url}/`}>

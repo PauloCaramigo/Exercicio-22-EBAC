@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Header } from "./header/header";
-import './globals.css'
 import { Footer } from "./footer/footer";
+import './output.css'
 
 export const metadata: Metadata = {
   title: "Recanto do Bardo",
