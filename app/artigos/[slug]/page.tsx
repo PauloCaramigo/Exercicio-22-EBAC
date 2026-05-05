@@ -1,4 +1,5 @@
 import { getMateria, getMaterias } from "@/app/lib/api/api";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export const dynamic = "force-dynamic";
@@ -32,7 +33,7 @@ const Materia = async ({params} : Props) => {
     return (
         <section className="container flex flex-col my-10 mx-auto p-8 bg-gray-200">
             <div className="flex">
-                <img src={materia.imgSrc} className="w-100 h-100" alt="imagem ilustrativa da matéria" />
+                <Image src={materia.imgSrc} className="w-100 h-100" alt="imagem ilustrativa da matéria"  />
 
                 <div className="p-4">
                     <h1 className="text-4xl font-bold flex justify-center mb-4">{materia.titulo}</h1>
